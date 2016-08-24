@@ -44,6 +44,7 @@ int main(int argc, char **argv)
             if ((i % j) == 0)
             {    
                 primal = 1;
+                //ADDED for primebruteopt.c version
                 break;
             }
             j++;
