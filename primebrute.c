@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     //initialization of variables
 	int max 	= 0; 
 	int i 		= 2;  //outer loop counter
-    int j       = 1;  //inner loop counter
+    int j       = 2;  //inner loop counter
     int primal  = 0;  //"is prime" flag, 0 for no, 1 for yes
 
     //convert command line argument from ASCII to integer
@@ -33,21 +33,21 @@ int main(int argc, char **argv)
 	gettimeofday(&time_start, 0);
 
     //main loop
-	while (i < max)
+	while (i <= max)
 	{
         //printf("outer iteration: %d\n", i);
-        while (j < max) 
+        while (j < i) 
         {
             //printf("inner iteration: %d\n", j);
-            if ((i % j) != 0)
+            if ((i % j) == 0)
             {    
                 primal = 1;
             }
             j++;
         }
-        j = 1;
+        j = 2;
 
-		if (primal == 1)
+		if (primal == 0)
 		{
 			printf("%d ", i);
 		}  
