@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	int max 	= 0; 
 	int i 		= 2;  //outer loop counter
     int j       = 2;  //inner loop counter
-    int primal  = 0;  //"is prime" flag, 0 for no, 1 for yes
+    int primal  = 0;  //"is not prime" flag, 0 for no, 1 for yes
 
     //convert command line argument from ASCII to integer
 	max = atoi(argv[1]);
@@ -35,10 +35,9 @@ int main(int argc, char **argv)
     //main loop
 	while (i <= max)
 	{
-        //printf("outer iteration: %d\n", i);
+        //inner loop
         while (j < i) 
         {
-            //printf("inner iteration: %d\n", j);
             if ((i % j) == 0)
             {    
                 primal = 1;
