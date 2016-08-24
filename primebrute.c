@@ -65,5 +65,5 @@ int main(int argc, char **argv)
 	fprintf(stderr, "%10.6lf\n", time_end.tv_sec - time_start.tv_sec + ((time_end.tv_usec - time_start.tv_usec) / 1000000.0));	
 
 
-	exit (0);		
+	return (0);		
 }
