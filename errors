@@ -1,0 +1,7 @@
+matrixadd.c: In function 'main':
+matrixadd.c:13:9: warning: unused variable 'matrixC' [-Wunused-variable]
+  sc   **matrixC; // result matrix
+         ^
+matrixadd.c:9:9: warning: unused variable 'out' [-Wunused-variable]
+  FILE  *out;
+         ^
